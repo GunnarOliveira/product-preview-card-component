@@ -52,7 +52,7 @@ img {
   max-height: 100%;
 }
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 .container {
@@ -71,7 +71,7 @@ p {
 }
 
 .subtitle {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -82,7 +82,7 @@ p {
 .price {
   color: var(--neutral-color-02);
   font-family: "Fraunces";
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
 }
