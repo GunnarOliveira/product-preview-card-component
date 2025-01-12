@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /*primary colors*/
+  --primary-color-01: hsl(158, 36%, 37%);
+  --primary-color-02: hsl(30, 38%, 92%);
+  /*Neutral colors*/
+  --neutral-color-01: hsl(0, 0%, 100%);
+  --neutral-color-02: hsl(212, 21%, 14%);
+  --neutral-color-03: hsl(228, 12%, 48%);
+}
+/*utility classes*/
+.primary-color-01 {
+  color: var(--primary-color-01);
+}
+.primary-color-02 {
+  color: var(--primary-color-02);
+}
+.neutral-color-01 {
+  color: var(--neutral-color-01);
+}
+.neutral-color-02 {
+  color: var(--neutral-color-02);
+}
+.neutral-color-03 {
+  color: var(--neutral-color-03);
+}
+/*general style*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat";
+  background: var(--primary-color-02);
+}
+article {
+  box-sizing: border-box;
+  width: 325px;
+  display: grid;
+  padding: 30px;
+  gap: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--neutral-color-01);
+}
+.banner {
+  width: 325px;
+  height: 100%;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.title {
+  max-width: 10ch;
+}
+.title,
+.price {
+  color: var(--neutral-color-02);
+  font-family: "Fraunces";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.price {
+  color: var(--primary-color-01);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.old-price {
+  color: var(--neutral-color-03);
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  font-weight: 700;
+  color: var(--neutral-color-01);
+  background: var(--primary-color-01);
+  border-radius: 4px;
+}
+button img {
+  width: 16px;
+  height: 16px;
+}
+button:hover {
+  cursor: pointer;
+  background: #1a4031;
+}
+@media (max-width: 650px) {
+  article {
+    padding: 20px;
+  }
+  .title {
+    max-width: 13ch;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .banner {
+    height: 250px;
+  }
+  .title,
+  .price {
+    font-size: 2rem;
+  }
+}
